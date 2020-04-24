@@ -4,7 +4,7 @@
 
 const clusterId = 'levi-test-nats'
 // const servers = ['nats://10.50.10.74:4222', 'nats://10.50.10.247:4222', 'nats://10.50.10.9:4222']
-const servers = ['nats://10.50.10.247:4222']
+const servers = ['nats://levi-nats-streaming-45f77c748439eec4.elb.ap-northeast-1.amazonaws.com:4222']
 
 const stan = require('node-nats-streaming').connect(clusterId, 'subscriber', { servers: servers })
 
